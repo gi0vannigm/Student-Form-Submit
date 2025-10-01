@@ -1,0 +1,12 @@
+<h1><%= @student.name %></h1>
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+<p>
+    <strong>Grade:</strong>
+    <%= @student.grade %>
+</p>
+
+<%= link_to "Back", students_path %>
+<%= button_to "Delete", @student, method: :delete, data: { confirm: "Are you sure?" } %>
